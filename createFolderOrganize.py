@@ -41,12 +41,11 @@ class MyHandler(FileSystemEventHandler):
 
 
  
-os.chdir(' ') #insert your downloads folder uri
+
+base = 'C:\\Users\\[username]\\Downloads\\' #insert your downloads folder uri  eg. C:\\Users\\[username]\\Downloads\\
+os.chdir(base) 
 
 # print(os.getcwd()) #check working directory
-
-base = ' ' #insert your downloads folder uri
-
 
 folder_names = ['PDF','Images','Word','Excel','PowerPoint','Apps']
 
